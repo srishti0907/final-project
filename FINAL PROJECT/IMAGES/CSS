@@ -1,0 +1,315 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header and Navigation */
+header {
+    position: relative;
+}
+
+nav {
+    background: #333;
+    padding: 10px 0;
+}
+
+.nav-choke ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-choke ul li {
+    margin: 0 15px;
+}
+
+.nav-choke ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-choke ul li a.current {
+    border-bottom: 2px solid #f39c12;
+}
+
+.search form {
+    display: flex;
+}
+
+.search input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.search button {
+    background: #f39c12;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    padding: 5px 10px;
+    color: #c15c5c;
+    cursor: pointer;
+}
+
+/* Banner */
+.banner {
+    background: url('./Images/banner.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn.orange {
+    background: #f39c12;
+}
+
+.btn.black {
+    background: #333;
+}
+
+/* About Us Section */
+#about-us {
+    padding: 60px 20px;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-info p {
+    margin-bottom: 20px;
+}
+
+/* Services Section */
+#our-services {
+    padding: 60px 20px;
+}
+
+.services-header h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(50% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .info {
+    padding: 20px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+/* Vision Section */
+#our-vision {
+    background: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.vision-header h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.vision-info p {
+    margin-bottom: 20px;
+}
+
+.vision-btn a {
+    background: #f39c12;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Team Section */
+#our-team {
+    padding: 60px 20px;
+}
+
+.team-header h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.team-body {
+    display: flex;
+    gap: 20px;
+}
+
+.team-body .john, .team-body .bob {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.team-body img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+.team-body h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.team-body h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact-us {
+    padding: 60px 20px;
+}
+
+.message-form h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.input-block {
+    margin-bottom: 20px;
+}
+
+.input-block label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-block input,
+.input-block textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e38686;
+    border-radius: 4px;
+}
+
+.button-block {
+    text-align: right;
+}
+
+.button-block button {
+    background: #f39c12;
+    border: none;
+    padding: 10px 20px;
+    color: #943e3e;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #ba5353;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+}
